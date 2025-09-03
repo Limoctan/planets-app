@@ -9,6 +9,12 @@ class PlanetDetailsUI extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    var size = MediaQuery.of(context).size;
+
+    final double itemHeight = (size.height - kToolbarHeight - 24) / 2;
+    final double itemWidth = size.width / .8;
+    final double aspectRatio = itemWidth / itemHeight;
+
     final planet = ref
         .watch(fetchPlanetsProvider)
         .value
@@ -80,6 +86,7 @@ class PlanetDetailsUI extends ConsumerWidget {
                     physics: const NeverScrollableScrollPhysics(),
                     shrinkWrap: true,
                     crossAxisCount: 2,
+                    childAspectRatio: aspectRatio,
                     children: [
                       _InfoTile(
                         icon: Icons.wb_sunny,

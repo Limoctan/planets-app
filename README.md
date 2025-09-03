@@ -22,3 +22,7 @@ Me basé en la arquitectura limpia para estructurar el proyecto de la siguiente 
 ## TO DO
 
 - Mejorar la interfaz. La interfaz actualmente es funcional, pero me gustaria pulirla para que se vea mejor. No pude pulirla lo suficiente antes de la entrega, pero igual deseo hacer después de entregarlo.
+
+Para correr el proyecto entrar a la carpeta principar y correr el comando
+
+    flutter run lib/main.dart
