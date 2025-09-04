@@ -19,6 +19,17 @@ Me basé en la arquitectura limpia para estructurar el proyecto de la siguiente 
 - Carpeta Domain: Donde tengo los modelos de como deberia recibir las respuesta de la API.
 - Carpeta Data: Donde tengo el repositorio donde manejo las llamadas a la API.
 
+## Recursos adicionales que use como referencia
+
+- https://codewithandrea.com/articles/flutter-app-architecture-riverpod-introduction/
+
+## Observaciones
+
+La API que me facilitaron tiene algunos errores de tipado que me complicaron un poco el desarrollo del modelo Planet
+
+- La variable `volume_km3` para unos planetas es un string y para otros un Integer, lo cual hace dificil asignarle un tipo en el modelo.
+- La variable `year_length_earth_days` para algunos planetas se llama `year_length_earth_years`. Lo cual es inconsistente. No sé es realmente un error o si es que funciona distinto para algunos planetas.
+
 ## TO DO
 
 - Mejorar la interfaz. La interfaz actualmente es funcional, pero me gustaria pulirla para que se vea mejor. No pude pulirla lo suficiente antes de la entrega, pero igual deseo hacer después de entregarlo.
